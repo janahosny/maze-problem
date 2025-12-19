@@ -1,4 +1,5 @@
 -- Maze pathfinding problem --
+
 Overview:
 
 Our AI project focuses on solving a 20 × 20 maze using A* , BFS and DFS search algorithms. The maze is represented as a 2D grid, and the goal is to find the shortest path from a start cell to a goal cell while avoiding walls.
@@ -37,6 +38,7 @@ Total cost:
 f(n)=g(n)+h(n)
 
 Characteristics of A*: 
+
 -Informed search: Uses heuristic h(n) to estimate distance to goal. 
 -Optimal: Finds shortest path if heuristic is admissible. 
 -Complete: Will find a solution if one exists. 
@@ -46,6 +48,7 @@ Characteristics of A*:
 Guarantees the optimal (shortest) path since the heuristic is admissible.
 
 Analysis of heuristic effectiveness: 
+
 The Manhattan distance heuristic guides A* toward the goal efficiently in our 20×20 maze, allowing movement in four directions. It is admissible, so it never overestimates the true cost and guarantees the shortest path. Even though the heuristic doesn’t directly consider walls, it helps the algorithm focus on the goal, exploring fewer unnecessary nodes than BFS or DFS. This makes the search quicker and more efficient.  
 
 Visualization:
