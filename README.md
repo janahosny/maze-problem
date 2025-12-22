@@ -45,17 +45,6 @@ Characteristics of A*:
 -Admissible heuristic: Never overestimates actual cost → guarantees optimal solution. 
 -Heuristic used: Manhattan distance for our maze  |x₁ – x₂| + |y₁ – y₂|
 
-Guarantees the optimal (shortest) path since the heuristic is admissible.
-
-Analysis of heuristic effectiveness: 
-
-The Manhattan distance heuristic guides A* toward the goal efficiently in our 20×20 maze, allowing movement in four directions. It is admissible, so it never overestimates the true cost and guarantees the shortest path. Even though the heuristic doesn’t directly consider walls, it helps the algorithm focus on the goal, exploring fewer unnecessary nodes than BFS or DFS. This makes the search quicker and more efficient.  
-
-Visualization:
-Blue cells represent explored nodes.
-Red line represents the final optimal path.
-Start and goal cells are highlighted with different colors.
-
 Performance Evaluation:
 
 The algorithms are compared based on:
